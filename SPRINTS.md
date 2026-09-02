@@ -26,5 +26,4 @@
 ## Sprint 6 - PDF reading
 - Read PDF files
 - Extract text from PDF
-- 
 
