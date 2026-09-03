@@ -46,6 +46,7 @@ Difficulty = st.radio(
     ]
 )
 st.markdown("### Study material")
+cleaned_text = ""
 if input_type == "upload PDF":
     pdf_file = st.file_uploader(
         "Upload your PDF",
@@ -64,8 +65,8 @@ else:
         "Enter your study material",
         height = 200
     )
-if st.button("process text"):
-    if text:
+    if st.button("process text"):
+     if text:
         cleaned_text = clean_text(text) 
 
 
@@ -73,12 +74,14 @@ if st.button("process text"):
         st.success("Text processed successfully")
         st.write("processed text:")
         st.write(cleaned_text)
-    else:
+     else:
         st.error("please enter some text first")
 
 st.markdown("### Generate quiz")
 if st.button("Generate quiz"):
     st.success("Quiz generated started!")        
        
+
+
 
 
