@@ -14,3 +14,12 @@ def calculate_percentage(score, total):
         return 0.0
 
     return (score / total) * 100
+
+def get_result_message(percentage):
+    """Return feedback based on quiz performance."""
+    if percentage >= 80:
+        return "Excellent work!"
+    elif percentage >= 50:
+        return "Good effort! Keep practicing."
+    else:
+        return "Keep practicing and try again."
