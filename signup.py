@@ -4,3 +4,7 @@ def validate_signup(name, username, email, password):
         return False
 
     return True
+
+def validate_password_confirmation(password, confirm_password):
+    """Check whether both passwords match."""
+    return password == confirm_password
