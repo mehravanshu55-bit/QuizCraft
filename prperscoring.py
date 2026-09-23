@@ -7,3 +7,10 @@ def calculate_score(answers, correct_answers):
             score += 1
 
     return score
+
+def calculate_percentage(score, total):
+    """Calculate quiz percentage."""
+    if total == 0:
+        return 0.0
+
+    return (score / total) * 100
